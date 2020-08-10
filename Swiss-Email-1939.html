@@ -7,18 +7,13 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 
-<body>
-        <nav class="navbar navbar-expand-lg navbar-danger">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body>   
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 d-none d-lg-block side-menu bg-dark">
-                <div class="card border-0">
-                    <ul class="list-group">
-                                      
-                        <button class="btn btn-info mx-auto compose bg-danger">Compose</button>
+            <div class="col-lg-3 d-lg-block side-menu bg-dark">
+                <div class="card border-6">
+                    <ul class="list-group">                                    
+                        <button class="btn btn-info mx-auto compose bg-danger mt-4">Compose</button>
              
                             <a class="nav-link" href="#">Inbox (89)</a>
                   
@@ -34,19 +29,19 @@
                     </ul>
                 </div>
             </div>
+
       
             <div class="col-lg-4 email-list">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control search-emails" placeholder="Search for emails if you want I guess....idk">
                     <div class="input-group-append search-emails">
-                        <button type="button" class="btn btn-danger">Danger</button>
-                            
+                        <button type="button" class="btn btn-danger">Danger</button>                           
                          </button>
                     </div>
                 </div>
                 <div class="card email-card w-100">
                     <div class="card-body">
-                        <span class="date-time">2 October, 1939</span>
+                        <span class="date">2 October, 1939</span>
                         <h5 class="card-title">Racquetball still on?</h5>
                         <span class="to">To: Switzerland@gmail.com</span>
                         <p class="from">From: BigCheese1883@yahoo.com</p>
@@ -57,17 +52,111 @@
 
                 <div class="card email-card w-100">
                     <div class="card-body">
-                        <span class="date-time">28 October, 1939</span>
-                        <h5 class="card-title">FDR</h5>
+                        <span class="date">28 October, 1939</span>
+                         <h5 class="card-title">FDR</h5>
+                         <span class="to">To: Switzerland@gmail.com</span>
+                         <p class="from">From: WheelsNShades@yahoo.com</p>                    
                         <p class="card-text">What is with this buildup of troops and planes.........</p>
                     </div>
                 </div>
 
-                <div class="card email-card w-100 selected-email">
+                <div class="card email-card w-100">
                     <div class="card-body">
                         <span class="date-time">31 October, 1939</span>
                         <h5 class="card-title">Poland has questions......</h5>
+                        <span class="to">To: Switzerland@gmail.com</span>
+                        <p class="from">From: PolishForkLift22@aol.com</p> 
                         <p class="card-text">Hello Switzerland, Germany seems to be very close to our border and we are wondering if you know where they may have gotten the funds to do this?  
                             Get back to us as soon as you can thanks a bunch friend!</p>
                     </div>
                 </div>
+
+                <div class="card email-card w-100">
+                    <div class="card-body">
+                        <span class="date-time">31 October, 1939</span>
+                      <h5 class="card-title">Gold Gold Gold</h5>
+                      <span class="to">To: Switzerland@gmail.com</span>
+                      <p class="from">From: ArtistGuy91@gmail.com</p> 
+                      <p class="card-text">Hello Swiss friend we have sent some gold to you in order for you to "obey" the terms of the "Treaty of Versailles" and in no way help us get more funding for our wonderful armed forces.  
+                          We know you will completely do the right and "lawful" thing and not help us with any "illegal activity"  very much appreciate it.  Winky Face</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-5 bg-dark">
+                <div class="to-from">
+                    <p class="to text-white bg-dark">To: Switzerland@gmail.com</p>
+                    <p class="from text-white bg-dark">From: FrenchBread@aol.com</p>
+                </div>
+                <div class="email-header">
+                    <div class="email-actions">
+                        <h1 class="email-header text-white bg-dark">Maginot Line Feedback</h1>
+                </div>
+            </div>
+
+                <div class="email-body">
+                    <p class="email-body text-white bg-dark">
+                       Aye thanks Swiss buddy for giving us that awesome feedback about the Maginot Line being a good idea, good to know we haven't wasted our time building it since 1928.
+                        We know theres no way this baby will ever be circumvented or broken because us French with our fancy mustaches and weird painter hats are all knowning....unless we don't know it.                      
+                    </p>
+                      <p class="email-body"></p>
+                  </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Type Angry Message......"></textarea>
+                </div>
+
+                <div class="reply">
+                    <button class="btn btn-info reply bg-danger" type="button">Reply Maybe??</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+        <style>
+/*COLUMN One*/
+    body {
+    background-color: #000000;
+}
+
+    button.navbar-compose {
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+    button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*COLUMN TWO*/
+    div.email-card {
+    color: white;
+    background-color: #200202;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top:14px;
+}
+
+/*COLUMN THREE*/
+    div.email-detail{
+    padding: 24px 24px 18px 18px;
+}
+
+    div.email-body {
+    color: white;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+    div.to-from {
+    color: white;
+    font-size: 20px;
+    line-height: 0.5;
+    padding-top: 20px;
+}
+        </style>
